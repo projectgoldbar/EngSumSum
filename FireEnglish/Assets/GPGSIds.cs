@@ -24,21 +24,21 @@
 
 public static class GPGSIds
 {
-        public const string leaderboard_season_1 = "CgkIxLi5xPYJEAIQDw"; // <GPGSID>
-        public const string achievement_level_10_clear = "CgkIxLi5xPYJEAIQBw"; // <GPGSID>
-        public const string achievement_gainbox_step2 = "CgkIxLi5xPYJEAIQDA"; // <GPGSID>
-        public const string achievement_stater = "CgkIxLi5xPYJEAIQAQ"; // <GPGSID>
-        public const string achievement_gainbox_step4 = "CgkIxLi5xPYJEAIQDg"; // <GPGSID>
-        public const string achievement_gainbox_step1 = "CgkIxLi5xPYJEAIQDQ"; // <GPGSID>
-        public const string achievement_playcount = "CgkIxLi5xPYJEAIQCQ"; // <GPGSID>
-        public const string achievement_level1_clear = "CgkIxLi5xPYJEAIQAw"; // <GPGSID>
-        public const string leaderboard_sumsumzombie_leaderboard = "CgkIxLi5xPYJEAIQAA"; // <GPGSID>
-        public const string achievement_level5_clear = "CgkIxLi5xPYJEAIQBQ"; // <GPGSID>
-        public const string achievement_level2_clear = "CgkIxLi5xPYJEAIQBA"; // <GPGSID>
-        public const string achievement_level_7_clear = "CgkIxLi5xPYJEAIQBg"; // <GPGSID>
-        public const string achievement_gainbox_step3 = "CgkIxLi5xPYJEAIQCg"; // <GPGSID>
-        public const string achievement_playtime = "CgkIxLi5xPYJEAIQCA"; // <GPGSID>
-        public const string achievement_potion = "CgkIxLi5xPYJEAIQCw"; // <GPGSID>
+        public const string leaderboard_season_1 = "CgkIut7Vjv8REAIQDw"; // <GPGSID>
+        public const string achievement_level_10_clear = "CgkIut7Vjv8REAIQBg"; // <GPGSID>
+        public const string achievement_gainbox_step2 = "CgkIut7Vjv8REAIQCg"; // <GPGSID>
+        public const string achievement_stater = "CgkIut7Vjv8REAIQAQ"; // <GPGSID>
+        public const string achievement_gainbox_step4 = "CgkIut7Vjv8REAIQDQ"; // <GPGSID>
+        public const string achievement_gainbox_step1 = "CgkIut7Vjv8REAIQCA"; // <GPGSID>
+        public const string achievement_playcount = "CgkIut7Vjv8REAIQCw"; // <GPGSID>
+        public const string achievement_level1_clear = "CgkIut7Vjv8REAIQAg"; // <GPGSID>
+        public const string leaderboard_sumsumzombie_leaderboard = "CgkIut7Vjv8REAIQDg"; // <GPGSID>
+        public const string achievement_level5_clear = "CgkIut7Vjv8REAIQBA"; // <GPGSID>
+        public const string achievement_level2_clear = "CgkIut7Vjv8REAIQAw"; // <GPGSID>
+        public const string achievement_level_7_clear = "CgkIut7Vjv8REAIQBQ"; // <GPGSID>
+        public const string achievement_gainbox_step3 = "CgkIut7Vjv8REAIQDA"; // <GPGSID>
+        public const string achievement_playtime = "CgkIut7Vjv8REAIQCQ"; // <GPGSID>
+        public const string achievement_potion = "CgkIut7Vjv8REAIQBw"; // <GPGSID>
 
 }
 

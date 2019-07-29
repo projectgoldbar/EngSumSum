@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class zombie_SturnCountText : MonoBehaviour
 {
-
     public TextMesh text;
     public TextMesh MainText;
 
-    bool MoveGo = false;
+    private bool MoveGo = false;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (tutorialzombieTracking.ZombieSturnCounting <= 8 && !MoveGo)
         {
@@ -19,7 +18,7 @@ public class zombie_SturnCountText : MonoBehaviour
         }
         if (tutorialzombieTracking.ZombieSturnCounting >= 8 && !MoveGo)
         {
-            MainText.text = "출구문이 오픈되었습니다.  올라가서 이동하세요~!!!";
+            MainText.text = "The door has been opened. Go to the exit ~ !!!";
             MoveGo = true;
         }
     }
