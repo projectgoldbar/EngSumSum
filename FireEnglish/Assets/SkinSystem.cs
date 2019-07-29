@@ -55,17 +55,15 @@ public class SkinSystem : MonoBehaviour
         {
             equipButtonImage.sprite = spriteData.equipedSprite;
             skinEquipButton.interactable = false;
-            equipText.text = "장착중";
+            equipText.text = "Equiped";
         }
         else
         {
             equipButtonImage.sprite = spriteData.unequipSprite;
             skinEquipButton.interactable = true;
-            equipText.text = "장착하기";
+            equipText.text = "Equip";
         }
     }
-
- 
 
     public SKinInfo ThrowRandomSkin()
     {
