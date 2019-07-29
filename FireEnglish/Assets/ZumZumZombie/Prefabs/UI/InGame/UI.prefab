@@ -261,8 +261,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 388.79993, y: -51.91437}
-  m_SizeDelta: {x: 777.59985, y: 103.82874}
+  m_AnchoredPosition: {x: 389.0171, y: -51.839996}
+  m_SizeDelta: {x: 778.0342, y: 103.67999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1003818794
 CanvasRenderer:
@@ -1529,7 +1529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -16.000061, y: 0}
+  m_AnchoredPosition: {x: -16.000122, y: 0}
   m_SizeDelta: {x: 350, y: 349}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1812619794
@@ -3663,8 +3663,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC911\uBCF5\uC120\uD0DD\uC740\n\uB354 \uB192\uC740 \uB2A5\uB825\uCE58\uB97C
-    \uBD80\uC5EC\uD569\uB2C8\uB2E4."
+  m_Text: "Duplicate selection\r\nGive higher stats."
 --- !u!1 &1473676181760471246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5040,8 +5039,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 349.91995, y: -211.98367}
-  m_SizeDelta: {x: 699.8399, y: 141.32245}
+  m_AnchoredPosition: {x: 350.11536, y: -211.68}
+  m_SizeDelta: {x: 700.2307, y: 141.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1571577149118900319
 CanvasRenderer:
@@ -10268,7 +10267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC120\uD0DD\uD558\uC138\uC694."
+  m_Text: Choose.
 --- !u!1 &6190813961381141218
 GameObject:
   m_ObjectHideFlags: 0
@@ -10905,7 +10904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &208078180648264862
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12522,8 +12521,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 349.91995, y: -70.661224}
-  m_SizeDelta: {x: 699.8399, y: 141.32245}
+  m_AnchoredPosition: {x: 350.11536, y: -70.56}
+  m_SizeDelta: {x: 700.2307, y: 141.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4695218765513011360
 CanvasRenderer:
@@ -13995,10 +13994,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8091635642107522228}
     m_Modifications:
-    - target: {fileID: 179172, guid: e0590c316b816ec44b9339efac2791c2, type: 3}
-      propertyPath: m_Name
-      value: SkinBox
-      objectReference: {fileID: 0}
     - target: {fileID: 438984, guid: e0590c316b816ec44b9339efac2791c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14042,6 +14037,10 @@ PrefabInstance:
     - target: {fileID: 438984, guid: e0590c316b816ec44b9339efac2791c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179172, guid: e0590c316b816ec44b9339efac2791c2, type: 3}
+      propertyPath: m_Name
+      value: SkinBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0590c316b816ec44b9339efac2791c2, type: 3}
@@ -14439,10 +14438,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8091635642107522228}
     m_Modifications:
-    - target: {fileID: 182360, guid: 312f12b59d18395419bd580c4cd187cf, type: 3}
-      propertyPath: m_Name
-      value: SkinBoxOpen
-      objectReference: {fileID: 0}
     - target: {fileID: 462674, guid: 312f12b59d18395419bd580c4cd187cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57
@@ -14486,6 +14481,10 @@ PrefabInstance:
     - target: {fileID: 462674, guid: 312f12b59d18395419bd580c4cd187cf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 182360, guid: 312f12b59d18395419bd580c4cd187cf, type: 3}
+      propertyPath: m_Name
+      value: SkinBoxOpen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 312f12b59d18395419bd580c4cd187cf, type: 3}

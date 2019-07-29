@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8263189020715681233}
   - component: {fileID: 8263189020715681243}
   - component: {fileID: 8263189020715681236}
-  - component: {fileID: 8263189020715681239}
   - component: {fileID: 8263189020715681238}
   - component: {fileID: 8263189020715681241}
   m_Layer: 0
@@ -54,36 +53,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d24a487f9764fe4e9407bd1edc09cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Human: []
   playerData: {fileID: 0}
   liveTime: {fileID: 0}
   gameOverUi: {fileID: 0}
-  gameResultUi: {fileID: 0}
-  gameClearUi: {fileID: 0}
-  itemResultUi: {fileID: 0}
-  playerController: {fileID: 0}
   evolSystem: {fileID: 8263189020715681233}
+  stageManager: {fileID: 8263189020715681241}
   evolUi: {fileID: 0}
   evolButton1: {fileID: 0}
   evolButton2: {fileID: 0}
   evolButton3: {fileID: 0}
+  adsButton: {fileID: 0}
+  nomalCoinText: {fileID: 0}
+  adsCoinText: {fileID: 0}
   timeUi: {fileID: 0}
   goldUi: {fileID: 0}
+  boxCountUI: {fileID: 0}
   uITweenEffectManager: {fileID: 0}
   scoreText: {fileID: 0}
   survivalTimeTxt: {fileID: 0}
   coinText: {fileID: 0}
-  StageClearText: {fileID: 0}
   spwanPoints:
-  - {x: -56, y: 1.7, z: -86}
-  - {x: -0.6, y: 1.7, z: -88.6}
-  - {x: 114, y: 1.7, z: -88.6}
-  - {x: 160, y: 1.7, z: -33}
-  - {x: -1, y: 1.7, z: -37}
-  - {x: -56, y: 1.7, z: -37}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   score: 0
   resultGold: 0
   viewAd: 0
+  isPause: 0
   AdsVideo: {fileID: 0}
 --- !u!114 &8263189020715681233
 MonoBehaviour:
@@ -98,61 +97,105 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evolveIdx:
-  - name: "\uBC29\uD328"
-    description: "\uBC29\uC5B4\uB825\uC774\uC99D\uAC00\uD55C\uB2E4"
-    sprite: {fileID: 21300000, guid: 889982178ee83f04187544efa089e925, type: 3}
-    idx: 2
-    lv: 0
-  - name: "\uBC18\uC751\uC7A5\uAC11"
-    description: "\uD53C\uD574\uB97C\uC785\uC73C\uBA74\uC7A0\uC2DC\uAC00\uC18D\uD55C\uB2E4."
-    sprite: {fileID: 21300000, guid: cc8dbd391d48d5e46a5b4650470cb557, type: 3}
-    idx: 3
-    lv: 0
-  - name: "\uC778\uB0B4\uC2EC\uC54C\uC57D"
-    description: "\uCCB4\uB825\uAC10\uC18C\uC18D\uB3C4\uAC00 \uB290\uB824\uC9C4\uB2E4."
-    sprite: {fileID: 21300000, guid: b0226253a70a9c34d97c9d67daa764a4, type: 3}
-    idx: 4
-    lv: 0
-  - name: "\uC790\uC591\uAC15\uC7A5\uC81C"
-    description: "\uACE0\uAE30\uB85C\uBD80\uD130 \uC5BB\uB294 \uCCB4\uB825\uC774 \uC99D\uAC00\uD55C\uB2E4."
-    sprite: {fileID: 21300000, guid: 16371f8429b3f8348a22b238a774e186, type: 3}
-    idx: 5
-    lv: 0
-  - name: "\uC790\uC11D"
-    description: "\uACE8\uB4DC\uC744 \uB04C\uC5B4\uB2F9\uAE34\uB2E4."
-    sprite: {fileID: 21300000, guid: 6df1d54a4d445fd47a05e85e4460921a, type: 3}
-    idx: 6
-    lv: 0
-  - name: "\uC7AC\uD65C\uC6A9"
-    description: "\uC8FD\uC74C\uC744 1\uD68C \uBC29\uC9C0\uD55C\uB2E4."
-    sprite: {fileID: 21300000, guid: 25c820e4f6c4ebf4aa42c46f64f80b99, type: 3}
+  - name: Recovery+
+    description: Increased Potion Recovery
+    sprite: {fileID: 21300000, guid: 03477befb6c030842b81a07e142078a8, type: 3}
     idx: 0
     lv: 0
-  - name: "\uD480\uCC28\uC9C0"
-    description: "\uC2A4\uD0AC\uC744 \uCD5C\uB300\uB85C \uD68C\uBCF5\uD55C\uB2E4."
-    sprite: {fileID: 21300000, guid: fb6e93163cc427545910fcf3f3482e8d, type: 3}
+    lvUpdescription:
+    - Recovery+50%
+    - Recovery+75%
+    - Recovery+100%
+  - name: Iron Armor
+    description: Increased Defense
+    sprite: {fileID: 21300000, guid: f5a4a2fb7e8b6ed4280671d4df591af8, type: 3}
     idx: 1
     lv: 0
-  - name: "\uC804\uBC29\uBC29\uD328"
-    description: "\uC804\uBC29\uC5D0\uC11C\uC624\uB294\uACF5\uACA9\uC744\uCC28\uB2E8\uD55C\uB2E4"
-    sprite: {fileID: 21300000, guid: 26a9aa1a7f7e64142a42963880df8ae0, type: 3}
-    idx: 9
+    lvUpdescription:
+    - Defense(Small)
+    - Defense(Medium)
+    - Defense(Large)
+  - name: Golden Ratio
+    description: When you eat gold coins, you recover your HP
+    sprite: {fileID: 21300000, guid: 57e6e00705c36794fbc659f818208183, type: 3}
+    idx: 2
     lv: 0
-  - name: "\uC9C0\uB2A5\uAC15\uD654"
-    description: "\uC2B5\uB4DD \uACBD\uD5D8\uCE58\uAC00 \uC99D\uAC00\uD55C\uB2E4."
-    sprite: {fileID: 21300000, guid: 7af1d1a68e3f21f41abe4764d4259208, type: 3}
+    lvUpdescription:
+    - Gold recovery + 50%
+    - Gold recovery + 75%
+    - Gold recovery + 100%
+  - name: Taurine
+    description: Increased stamina recovery
+    sprite: {fileID: 21300000, guid: 16371f8429b3f8348a22b238a774e186, type: 3}
+    idx: 3
+    lv: 0
+    lvUpdescription:
+    - Stamina Recovery+50%
+    - Stamina Recovery+75%
+    - Stamina Recovery+100%
+  - name: Combustion
+    description: Get damaged, you recover the stamina
+    sprite: {fileID: 21300000, guid: 982e839c7bb8d8944a73961f9a18cd01, type: 3}
+    idx: 4
+    lv: 0
+    lvUpdescription:
+    - Increase Stamina +2
+    - Increase Stamina +3
+    - Increase Stamina +4
+  - name: Adrenaline
+    description: The lower the Hp, the stronger.
+    sprite: {fileID: 21300000, guid: 07cead3f48b6b8947bfa6ae1d802defa, type: 3}
+    idx: 5
+    lv: 0
+    lvUpdescription:
+    - Hp 30% activated
+    - Hp 40% activated
+    - Hp 50% activated
+  - name: Breathing
+    description: Increased health recovery when stopped
+    sprite: {fileID: 21300000, guid: eaf75e16b7abf43439d533cb214499a9, type: 3}
+    idx: 6
+    lv: 0
+    lvUpdescription:
+    - Recovers 5% of MaxHp
+    - Recovers 10% of MaxHp
+    - Recovers 20% of MaxHp
+  - name: Negotiation
+    description: ' Increase the amount of gold coins earned'
+    sprite: {fileID: 21300000, guid: acee28cf6c62a1a4d85d4db2dfa0b76b, type: 3}
     idx: 7
     lv: 0
-  - name: "\uBBF8\uC815\uC2A4\uD0AC"
-    description: "\uBBF8\uC815\uC2A4\uD0AC"
-    sprite: {fileID: 21300000, guid: acee28cf6c62a1a4d85d4db2dfa0b76b, type: 3}
-    idx: 9
-    lv: 0
-  - name: "\uACE0\uAE30\uAF2C\uB9AC"
-    description: "\uACE0\uAE30\uB97C \uB04C\uC5B4\uB2F9\uAE34\uB2E4"
-    sprite: {fileID: 21300000, guid: 1d89d4e1489773446b15bba66ef97f75, type: 3}
+    lvUpdescription:
+    - Earning gold coins + 2
+    - Earning gold coins + 3
+    - Earning gold coins + 4
+  - name: Fast running
+    description: Movement speed increases
+    sprite: {fileID: 21300000, guid: 77ec22448b0764249b61ca242d0e3628, type: 3}
     idx: 8
     lv: 0
+    lvUpdescription:
+    - Speed +15%
+    - Speed +10%
+    - Speed +10%
+  - name: Reactor
+    description: ' Shockwave range increases when box is learned'
+    sprite: {fileID: 21300000, guid: d93f4ad0d18bf184e9d4b06f60bc15ea, type: 3}
+    idx: 9
+    lv: 0
+    lvUpdescription:
+    - ShockWave Range + 22%
+    - ShockWave Range + 22%
+    - ShockWave Range + 22%
+  - name: Wish
+    description: The score increases by 1,000 points
+    sprite: {fileID: 21300000, guid: 5bd6f9655e4dc9c44a5d6707b3df7940, type: 3}
+    idx: 10
+    lv: 0
+    lvUpdescription:
+    - Score +1000
+    - Score +1000
+    - Score +1000
 --- !u!222 &8263189020715681243
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -195,20 +238,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
---- !u!114 &8263189020715681239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8263189020715681234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 575a3498e28f77545995dad9fc2dfe30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpdateInterval: 0.3
-  _text: {fileID: 0}
 --- !u!114 &8263189020715681238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,437 +314,462 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RefBoxs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  zombie: {fileID: 4281057405417156105, guid: 3cf1615535cc28c478c828bde613619a, type: 3}
-  dashZombie: {fileID: 4281057405417156105, guid: 3cf1615535cc28c478c828bde613619a,
+  - {fileID: 7585020686189225626, guid: 7f9de1ba2dff1134cbe96048617d8d03, type: 3}
+  - {fileID: 1810706729531671081, guid: 4fc03c798a4e39347b7869e0f9cdeac6, type: 3}
+  - {fileID: 5895544490407865625, guid: 2aca6a949c63315489f365579fb60fa2, type: 3}
+  zombie: {fileID: 1091131463947833992, guid: 67139ab86ec181e409a1902620b78909, type: 3}
+  dashZombie: {fileID: 1091131463947833992, guid: 3f24808e48151ea47ac55557be57d025,
     type: 3}
-  spitZombie: {fileID: 6389755854735096580, guid: e099f981845e03740a13bec589f7388e,
+  spitZombie: {fileID: 1091131463947833992, guid: af28a6bbb2cd80d4588c6e67ccbf7519,
     type: 3}
-  boxIndirection: {fileID: 0}
+  testCoinSpwan: {fileID: 0}
+  tarGetPointer: {fileID: 0}
+  originSlider: {fileID: 0}
+  currentSlider: {fileID: 0}
+  dashZombiePool: []
+  etcPool: []
   manager: {fileID: 8263189020715681232}
+  pivot: {fileID: 0}
+  lvTextUI: {fileID: 0}
   stageList:
-  - StageLv: 0
-    StageName: Stage 1
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+  - rotationSpeed: 0
+    StageName: Lv 1
+    PlayerPointLight: {r: 0.8072805, g: 0.41037738, b: 1, a: 0}
     spawnData:
       ClearScore: 4000
-      AddSpeed: 0.1
+      AddSpeed: 0
       AddDamage: 0
       percent_copper: 85
       percent_silver: 10
       percent_gold: 5
-      zombieCount: 5
+      zombieCount: 0
       dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      spitZombieCount: 4
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 2
+    PlayerPointLight: {r: 0.18943575, g: 0.6456114, b: 0.9339623, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 8000
       AddSpeed: 0
       AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_copper: 80
+      percent_silver: 15
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 0
+      spitZombieCount: 3
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 3
+    PlayerPointLight: {r: 0.56763095, g: 0.20140618, b: 0.5849056, a: 0}
+    spawnData:
+      ClearScore: 12000
+      AddSpeed: 0
+      AddDamage: 0
+      percent_copper: 75
+      percent_silver: 20
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 4
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 4
+    PlayerPointLight: {r: 0.24448201, g: 0.4870335, b: 0.7735849, a: 0}
+    spawnData:
+      ClearScore: 16000
+      AddSpeed: 1
+      AddDamage: 0
+      percent_copper: 70
+      percent_silver: 25
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 2
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 5
+    PlayerPointLight: {r: 1, g: 0.27514628, b: 0.1745283, a: 0}
+    spawnData:
+      ClearScore: 20000
+      AddSpeed: 0
+      AddDamage: 1
+      percent_copper: 65
+      percent_silver: 30
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 2
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 6
+    PlayerPointLight: {r: 0.990566, g: 0.378471, b: 0.3915316, a: 0}
+    spawnData:
+      ClearScore: 24000
+      AddSpeed: 0
+      AddDamage: 0
+      percent_copper: 60
+      percent_silver: 35
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 0
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 7
+    PlayerPointLight: {r: 0.25943398, g: 0.7829465, b: 1, a: 0}
+    spawnData:
+      ClearScore: 28000
+      AddSpeed: 0
+      AddDamage: 0
+      percent_copper: 55
+      percent_silver: 40
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 1
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 8
+    PlayerPointLight: {r: 0.8490566, g: 0.5727127, b: 0.5727127, a: 0}
+    spawnData:
+      ClearScore: 32000
+      AddSpeed: 1
+      AddDamage: 0
+      percent_copper: 50
+      percent_silver: 45
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 0
+      spitZombieCount: 2
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 9
+    PlayerPointLight: {r: 0.16629584, g: 0.5311557, b: 0.9528302, a: 0}
+    spawnData:
+      ClearScore: 36000
+      AddSpeed: 0
+      AddDamage: 1
+      percent_copper: 45
+      percent_silver: 50
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 0
+      spitZombieCount: 2
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 10
+    PlayerPointLight: {r: 0.3304112, g: 0.59851366, b: 0.9339623, a: 0}
+    spawnData:
+      ClearScore: 40000
+      AddSpeed: 1
+      AddDamage: 5
+      percent_copper: 40
+      percent_silver: 55
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 2
+      spitZombieCount: 2
+      rushSpeed: 2
+  - rotationSpeed: 0
+    StageName: Lv 11
+    PlayerPointLight: {r: 0.91734767, g: 0.3066038, b: 1, a: 0}
+    spawnData:
+      ClearScore: 44000
+      AddSpeed: 0
+      AddDamage: 3
+      percent_copper: 35
+      percent_silver: 60
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 2
+      rushSpeed: 1
+  - rotationSpeed: 1
+    StageName: Lv 12
+    PlayerPointLight: {r: 1, g: 0.16509432, b: 0.99701494, a: 0}
+    spawnData:
+      ClearScore: 48000
+      AddSpeed: 1
+      AddDamage: 0
+      percent_copper: 30
+      percent_silver: 65
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 0
+      rushSpeed: 1
+  - rotationSpeed: 1
+    StageName: Lv 13
+    PlayerPointLight: {r: 0.6282691, g: 0.3915094, b: 1, a: 0}
+    spawnData:
+      ClearScore: 52000
+      AddSpeed: 0
+      AddDamage: 3
+      percent_copper: 25
+      percent_silver: 70
+      percent_gold: 5
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 0
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 14
+    PlayerPointLight: {r: 0.16509432, g: 1, b: 0.21106952, a: 0}
+    spawnData:
+      ClearScore: 56000
+      AddSpeed: 0
+      AddDamage: 2
+      percent_copper: 20
+      percent_silver: 75
+      percent_gold: 5
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 15
+    PlayerPointLight: {r: 0.26254895, g: 0.45517126, b: 0.9433962, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 60000
       AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      AddDamage: 3
+      percent_copper: 15
+      percent_silver: 80
+      percent_gold: 5
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 16
+    PlayerPointLight: {r: 0.9811321, g: 0.41976827, b: 0.18974723, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 64000
       AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      AddDamage: 1
+      percent_copper: 10
+      percent_silver: 85
+      percent_gold: 5
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 2
+  - rotationSpeed: 0
+    StageName: Lv 17
+    PlayerPointLight: {r: 0.70249087, g: 0.3254717, b: 1, a: 0}
     spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      ClearScore: 68000
+      AddSpeed: 1
+      AddDamage: 3
+      percent_copper: 5
+      percent_silver: 90
+      percent_gold: 5
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 0
+  - rotationSpeed: 1
+    StageName: Lv 18
+    PlayerPointLight: {r: 0.2688679, g: 0.42394036, b: 1, a: 0}
     spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
+      ClearScore: 72000
+      AddSpeed: 1
+      AddDamage: 2
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 95
+      percent_gold: 5
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 0
+  - rotationSpeed: 1
+    StageName: Lv19
+    PlayerPointLight: {r: 0.41055447, g: 1, b: 0.25943398, a: 0}
     spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
+      ClearScore: 76000
+      AddSpeed: 1
+      AddDamage: 3
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 90
+      percent_gold: 10
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 3
+  - rotationSpeed: 0
+    StageName: Lv 20
+    PlayerPointLight: {r: 1, g: 0.9285263, b: 0.3160377, a: 0}
     spawnData:
-      ClearScore: 0
-      AddSpeed: 0
+      ClearScore: 80000
+      AddSpeed: 2
       AddDamage: 0
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 85
+      percent_gold: 15
+      zombieCount: 0
+      dashZombieCount: 0
+      spitZombieCount: 1
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 21
+    PlayerPointLight: {r: 1, g: 0.18396229, b: 0.18396229, a: 0}
+    spawnData:
+      ClearScore: 84000
+      AddSpeed: 1
+      AddDamage: 3
+      percent_copper: 0
+      percent_silver: 80
+      percent_gold: 20
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 3
+  - rotationSpeed: 1
+    StageName: Lv 22
+    PlayerPointLight: {r: 1, g: 0.25943398, b: 0.53420925, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 88000
       AddSpeed: 0
-      AddDamage: 0
+      AddDamage: 2
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 75
+      percent_gold: 25
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 3
+  - rotationSpeed: 0
+    StageName: Lv 23
+    PlayerPointLight: {r: 0.28342655, g: 1, b: 0.25943398, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 92000
       AddSpeed: 0
       AddDamage: 0
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 70
+      percent_gold: 30
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 1
+  - rotationSpeed: 0
+    StageName: Lv 24
+    PlayerPointLight: {r: 0.6955764, g: 0.20478818, b: 0.735849, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 96000
       AddSpeed: 0
       AddDamage: 0
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 65
+      percent_gold: 35
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 25
+    PlayerPointLight: {r: 0.73877203, g: 0.8867924, b: 0.33045566, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 100000
+      AddSpeed: 0
+      AddDamage: 3
+      percent_copper: 0
+      percent_silver: 60
+      percent_gold: 40
+      zombieCount: 0
+      dashZombieCount: 1
+      spitZombieCount: 0
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 26
+    PlayerPointLight: {r: 0.9320029, g: 0.41037738, b: 1, a: 0}
+    spawnData:
+      ClearScore: 104000
+      AddSpeed: 0
+      AddDamage: 3
+      percent_copper: 0
+      percent_silver: 55
+      percent_gold: 45
+      zombieCount: 0
+      dashZombieCount: 0
+      spitZombieCount: 0
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 27
+    PlayerPointLight: {r: 0.41037738, g: 1, b: 0.86801267, a: 0}
+    spawnData:
+      ClearScore: 108000
+      AddSpeed: 0
+      AddDamage: 1
+      percent_copper: 0
+      percent_silver: 50
+      percent_gold: 50
+      zombieCount: 0
+      dashZombieCount: 0
+      spitZombieCount: 0
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 28
+    PlayerPointLight: {r: 0.58111435, g: 1, b: 0.3443396, a: 0}
+    spawnData:
+      ClearScore: 112000
+      AddSpeed: 0
+      AddDamage: 3
+      percent_copper: 0
+      percent_silver: 45
+      percent_gold: 55
+      zombieCount: 0
+      dashZombieCount: 0
+      spitZombieCount: 0
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Lv 29
+    PlayerPointLight: {r: 1, g: 0.33490568, b: 0.6754607, a: 0}
+    spawnData:
+      ClearScore: 116000
       AddSpeed: 0
       AddDamage: 0
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 40
+      percent_gold: 60
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 0
+  - rotationSpeed: 1
+    StageName: Lv 30
+    PlayerPointLight: {r: 0.9433962, g: 0.8837483, b: 0.36044857, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 120000
       AddSpeed: 0
       AddDamage: 0
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 35
+      percent_gold: 65
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
+      rushSpeed: 0
+  - rotationSpeed: 0
+    StageName: Hell
+    PlayerPointLight: {r: 1, g: 0.3726415, b: 0.9686248, a: 0}
     spawnData:
-      ClearScore: 0
+      ClearScore: 124000
       AddSpeed: 0
-      AddDamage: 0
+      AddDamage: 3
       percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
+      percent_silver: 60
+      percent_gold: 70
       zombieCount: 0
       dashZombieCount: 0
       spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
-  - StageLv: 0
-    StageName: 
-    PlayerPointLight: {r: 0, g: 0, b: 0, a: 0}
-    spawnData:
-      ClearScore: 0
-      AddSpeed: 0
-      AddDamage: 0
-      percent_copper: 0
-      percent_silver: 0
-      percent_gold: 0
-      zombieCount: 0
-      dashZombieCount: 0
-      spitZombieCount: 0
-      mineCount: 0
+      rushSpeed: 0.5
+  UITweenEffectManager: {fileID: 0}
+  playerData: {fileID: 0}
+  particlePool: {fileID: 0}
+  coinPool: {fileID: 0}
   SpawnPosition:
   - {fileID: 0}
   - {fileID: 0}
@@ -730,5 +784,38 @@ MonoBehaviour:
   overlapIndex: 
   OBjData: []
   lightColor: {fileID: 0}
-  allZombies: []
   currentStageLV: 0
+  maxStageCount: 0
+  zombieMoveSpeed:
+  - 23
+  - 23
+  - 23
+  - 23
+  - 23
+  - 23
+  - 23
+  - 23
+  - 23
+  - 23
+  - 28
+  - 28
+  - 28
+  - 28
+  - 28
+  - 28
+  - 28
+  - 28
+  - 28
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  - 38
+  waveDistance: 35
