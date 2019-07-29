@@ -121,7 +121,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.20
+  bundleVersion: 1.21
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,9 +156,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.sum.zombie
+    Android: com.sum.zombieUS
   buildNumber: {}
-  AndroidBundleVersionCode: 71
+  AndroidBundleVersionCode: 72
   AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -247,7 +247,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/imitme1/Documents/GitHub/week/week/Fire/user.keystore
+  AndroidKeystoreName: C:/Users/hyun1/Downloads/EngSumSum/FireEnglish/user.keystore
   AndroidKeyaliasName: sumsum01
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -750,9 +750,9 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 4c97fad6-e59c-47e8-8eae-8f1b287a5435
+  cloudProjectId: 0f387dce-88c1-4381-9cd0-9e68bee9a28c
   framebufferDepthMemorylessMode: 0
-  projectName: Fire (1)
+  projectName: "\uC12C\uC12C\uC880\uBE44"
   organizationId: temperedfactory
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
